@@ -1,0 +1,17 @@
+﻿<Application x:Class="MultiWeixin.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MultiWeixin">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/PresentationFramework.Fluent;component/Themes/Fluent.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MultiWeixin;component/Themes/ButtonStyle.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MultiWeixin;component/Themes/GlodColorStyle.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MultiWeixin;component/Themes/CheckBoxStyle.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MultiWeixin;component/Themes/ListBoxStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

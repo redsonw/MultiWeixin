@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiWeixin", "src\MultiWeixin.csproj", "{76BB8622-0D69-E5FC-E907-EE8F342A1B87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76BB8622-0D69-E5FC-E907-EE8F342A1B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76BB8622-0D69-E5FC-E907-EE8F342A1B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76BB8622-0D69-E5FC-E907-EE8F342A1B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76BB8622-0D69-E5FC-E907-EE8F342A1B87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE255E30-4E3E-4D58-B275-42922C1DB610}
+	EndGlobalSection
+EndGlobal

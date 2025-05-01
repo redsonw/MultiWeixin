@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<!-- 项目版本号 -->
+		<Version>0.1.0.0</Version>
+		<!-- 程序集版本号 -->
+		<AssemblyVersion>0.1.0.0</AssemblyVersion>
+		<!-- 文件版本号 -->
+		<FileVersion>0.1.0.0</FileVersion>
+		<!-- 程序作者 -->
+		<Authors>弦月</Authors>
+		<!-- 公司组织 -->
+		<Company>Redsonw.Com</Company>
+		<!-- 文件说明 -->
+		<AssemblyTitle>解除微信多开工具</AssemblyTitle>
+		<Description>解除微信多开时互斥的功能，实现在电脑上多个微信。</Description>
+		<Copyright>Copyright © 2025</Copyright>
+		<Product>解除微信多开工具</Product>
+		<PackageIcon></PackageIcon>
+		<ApplicationIcon>Rescource\Images\Mu_icon.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ApplicationDefinition Remove="App.xaml" />
+		<None Remove="Rescource\Images\icon_512x512.png" />
+		<Content Include="Rescource\Images\Mu_icon.ico" />
+		<Resource Include="Rescource\Images\icon_512x512.png">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+		<Page Include="App.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Views\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.1" />
+		<PackageReference Include="Serilog" Version="4.2.0" />
+		<PackageReference Include="Serilog.Extensions.Hosting" Version="9.0.0" />
+		<PackageReference Include="Serilog.Settings.Configuration" Version="9.0.0" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+		<PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+		<PackageReference Include="Serilog.Sinks.Observable" Version="3.0.0" />
+		<PackageReference Include="Serilog.Sinks.ObservableCollection" Version="1.0.0" />
+		<PackageReference Include="System.Reactive" Version="6.0.1" />
+	</ItemGroup>
+
+</Project>
