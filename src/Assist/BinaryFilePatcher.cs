@@ -91,21 +91,20 @@ public class BinaryFilePatcher
 
             if (currentByte == newByte)
             {
-                Log.Information("目标地址 {Address:X} 已包含预期值，无需修改", address);
+                // Log.Information("目标地址 {Address:X} 已包含预期值，无需修改", address);
                 return true;
             }
 
             if (currentByte != expectedByte)
             {
-                Log.Error("地址 {Address:X} 的当前值 {Current:X2} 与预期值 {Expected:X2} 不匹配",
-                    address, currentByte, expectedByte);
+                // Log.Error("地址 {Address:X} 的当前值 {Current:X2} 与预期值 {Expected:X2} 不匹配", address, currentByte, expectedByte);
                 return false;
             }
 
             fileStream.Position = address;
             fileStream.WriteByte(newByte);
 
-            Log.Information($"成功在地址 {address:X} 将 {expectedByte:X2} 修改为 {newByte:X2}");
+            // Log.Information($"成功在地址 {address:X} 将 {expectedByte:X2} 修改为 {newByte:X2}");
 
             return true;
         }
@@ -156,7 +155,7 @@ public class BinaryFilePatcher
             var matches = FindPatternMatches(fileData, searchPattern, allowWildcard);
             if (matches.Count == 0)
             {
-                Log.Information("未找到匹配的字节模式");
+                // Log.Information("未找到匹配的字节模式");
                 return false;
             }
 
