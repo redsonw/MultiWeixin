@@ -2,16 +2,16 @@
 
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
-		<TargetFramework>net10.0-windows7.0</TargetFramework>
+		<TargetFramework>net9.0-windows7.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<UseWPF>true</UseWPF>
 		<!-- 项目版本号 -->
-		<Version>0.1.0.0</Version>
+		<Version>0.1.0.2</Version>
 		<!-- 程序集版本号 -->
-		<AssemblyVersion>0.1.0.0</AssemblyVersion>
+		<AssemblyVersion>0.1.0.2</AssemblyVersion>
 		<!-- 文件版本号 -->
-		<FileVersion>0.1.0.0</FileVersion>
+		<FileVersion>0.1.0.2</FileVersion>
 		<!-- 程序作者 -->
 		<Authors>弦月</Authors>
 		<!-- 公司组织 -->
